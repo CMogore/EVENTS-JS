@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Concepts Project</title>
+<style>
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    font-size: 20px;
+    color: #333;
+}
+
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+         <!-- Built in Javascript Event onclick which calls the handleButtonClick() Function when clicked -->
+        <button id="generateButton" onclick="handleButtonClick()">Generate Random Number</button>
+        <div id="result"></div>
+    </div>
+</body>
+
+<script src="app.js"></script>
+</html>
+
+<!--Practice-->
+<!-- <p>Nested Array</p>
+<div id="content"></div>
+
+
+</body>
+ <script>
+    const myPromise = new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            const generatedValue =[{name:"Chelsea", Age:12}];
+            if(generatedValue){
+                resolve(generatedValue);
+            }else{
+                reject("Error");
+            }  
+        }, 2000)
+       
+    })
+    myPromise.then((result) => {
+            console.log(result);
+            const resultDiv = document.getElementById('content');
+            resultDiv.textContent = ` Name: ${result[0].name} Age: ${result[0].Age}`;
+        }).catch((error) => {
+            console.error('Promise rejected with error:', error);
+        });
+    
+        
+    
+</script> -->
+
+<!-- <p>Object</p>
+
+<div id="cont"></div>
+<script>
+    function getDetails(){
+        const MPromise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const generatedValue = { name: "Chelsea", Age: 12 };
+            if (generatedValue) {
+                resolve(generatedValue);
+            } else {
+                reject("Error");
+            }
+        }, 2000);
+        });
+        return MPromise;
+    }
+    
+
+    MPromise.then((result) => {
+        console.log(result);
+        const resultDiv = document.getElementById('cont');
+        resultDiv.textContent = `Name: ${result.name}, Age: ${result.Age}`;
+    }).catch((error) => {
+        console.error('Promise rejected with error:', error);
+    });
+</script> -->
+
